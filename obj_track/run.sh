@@ -1,0 +1,1 @@
+python fit_object.py subject01_motion01_seg01

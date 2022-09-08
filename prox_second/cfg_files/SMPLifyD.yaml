@@ -1,0 +1,239 @@
+output_folder: '~/SMPLifyD'
+
+###################
+contact: True
+contact_angle: 45
+rho_contact: 5e-2
+contact_loss_weights:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 1e4
+#load_scene: True
+###################
+#
+model_folder: 'models'
+vposer_ckpt: "models/vposer_v1_0/"
+part_segm_fn: "models/smplx_parts_segm.pkl"
+
+focal_length_x: 918.457764
+focal_length_y: 918.437378
+camera_center_x: 956.966187
+camera_center_y: 555.944580
+
+focal_length_x_2: 915.299622
+focal_length_y_2: 915.196655
+camera_center_x_2: 956.664307
+camera_center_y_2: 551.616577
+rotation_2: 
+    - -0.02041759
+    - -1.0246703
+    - -0.1911809 
+
+translation_2:
+    - 1.91644413
+    - -0.2463002
+    - 1.47498948
+
+focal_length_x_3: 912.862671
+focal_length_y_3: 912.676331
+camera_center_x_3: 956.720032
+camera_center_y_3: 554.216675
+rotation_3: 
+    - 0.00994937 
+    - -1.98260969
+    - -0.3360769 
+
+translation_3:
+    - 2.21432269
+    - -0.57435604
+    - 3.43567277 
+
+focal_length_x_4: 909.820251
+focal_length_y_4: 909.624695
+camera_center_x_4: 957.618164
+camera_center_y_4: 554.602966
+rotation_4: 
+    - 0.07791128
+    - -2.96193859
+    - -0.444286 
+
+translation_4:
+    - 0.68468103
+    - -0.72400982
+    - 5.17053094 
+
+focal_length_x_5: 920.533447265625
+focal_length_y_5: 920.09722900390625
+camera_center_x_5: 958.4615478515625
+camera_center_y_5: 550.42987060546875
+rotation_5: 
+    - -0.08480487 
+    - 1.9511253 
+    - 0.29141503
+
+translation_5:
+    - -2.23179335 
+    - -0.58011089 
+    - 3.77226139
+
+focal_length_x_6: 909.176331
+focal_length_y_6: 909.235291
+camera_center_x_6: 956.148010
+camera_center_y_6: 555.015930
+rotation_6: 
+    - -0.0249596
+    - 0.96102642
+    - 0.10981734 
+
+translation_6:
+    - -2.25260206 
+    - -0.13121814 
+    - 1.28701058 
+
+
+
+#flip: True
+flip: False
+camera_mode: 'fixed'
+
+read_depth: True
+read_mask: True
+mask_on_color: True
+# Depth
+init_mode: 'scan'
+m2s: True
+rho_m2s: 5e-1
+m2s_weights:
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+
+s2m: True
+rho_s2m: 2e-1
+s2m_weights:
+    - 1.0
+    - 1.0
+    - 1e2
+    - 5e2
+    - 5e2
+
+trans_opt_stages:
+    - 2
+    - 3
+    - 4
+
+shape_weights:
+    - 1.0e2
+    - 5.0e1
+    - 1.0e1
+    - 0.5e1
+    - 0.5e1
+
+data_weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+
+###################
+dataset: 'openpose'
+joints_to_ign:
+    - 1
+    - 9
+    - 12
+prior_folder: 'priors'
+result_folder: 'results'
+gender: "male"
+model_type: 'smplx'
+# Flag for using the GPU
+use_cuda: True
+float_dtype: "float32"
+use_joints_conf: True
+use_pca: True
+use_hands: True
+use_face: True
+flat_hand_mean: False
+# The number of mixture components for the pose prior
+num_gaussians: 8
+body_prior_type: 'l2'
+left_hand_prior_type: l2
+right_hand_prior_type: l2
+jaw_prior_type: 'l2'
+num_pca_comps: 12
+# The constant for the robust loss function
+rho: 100
+interpenetration: False
+df_cone_height: 0.0001
+# Upper arms and Spine 2
+# Neck and jaw
+ign_part_pairs: ["9,16", "9,17", "6,16", "6,17", "1,2", "12,22"]
+penalize_outside: True
+max_collisions: 128
+# LBFGS with line search
+optim_type: 'lbfgsls'
+ftol: 1e-9
+gtol: 1e-9
+lr: 1.0
+# Max number of optimization iterations
+maxiters: 300
+interactive: True
+visualize: False
+# Relative change in loss value
+body_pose_prior_weights:
+    - 4.04e2
+    - 4.04e2
+    - 57.4e0
+    - 4.78e0
+    - 4.78e0
+coll_loss_weights:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.01
+    - 1.0
+expr_weights:
+    - 1.0e2
+    - 5.0e1
+    - 1.0e1
+    - 0.5e1
+    - 0.5e1
+hand_pose_prior_weights:
+    - 4.04e2
+    - 4.04e2
+    - 57.4
+    - 4.78
+    - 4.78
+jaw_pose_prior_weights:
+    # First phase
+    - 4.04e03,4.04e04,4.04e04
+    # Second phase
+    - 4.04e03,4.04e04,4.04e04
+    # Third phase
+    - 574,5740,5740
+    # Fourth phase
+    - 47.8,478,478
+    # Fifth phase
+    - 47.8,478,478
+
+
+hand_joints_weights:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.1
+    - 2.0
+face_joints_weights:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 2.0
+
+use_vposer: True

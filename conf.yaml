@@ -1,0 +1,256 @@
+batch_id: 0
+batch_size: 1
+body_pose_prior_weights:
+- 404.0
+- 404.0
+- 57.4
+- 4.78
+- 4.78
+body_prior_type: l2
+body_tri_idxs:
+- - 5
+  - 12
+- - 2
+  - 9
+camera_center_x: 956.966187
+camera_center_x_2: 956.664307
+camera_center_x_3: 956.720032
+camera_center_x_4: 957.618164
+camera_center_x_5: 958.4615478515625
+camera_center_x_6: 956.14801
+camera_center_y: 555.94458
+camera_center_y_2: 551.616577
+camera_center_y_3: 554.216675
+camera_center_y_4: 554.602966
+camera_center_y_5: 550.4298706054688
+camera_center_y_6: 555.01593
+camera_mode: fixed
+camera_type: persp
+coll_loss_weights:
+- 0.0
+- 0.0
+- 0.0
+- 0.01
+- 1.0
+config: cfg_files/SMPLifyD.yaml
+contact: false
+contact_angle: 45
+contact_body_parts:
+- L_Leg
+- R_Leg
+- L_Hand
+- R_Hand
+- gluteus
+- back
+- thighs
+contact_loss_weights:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+data_weights:
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+dataset: openpose
+degrees:
+- 0
+- 90
+- 180
+- 270
+depth_loss_weight: 100.0
+df_cone_height: 0.0001
+expr_weights:
+- 100.0
+- 50.0
+- 10.0
+- 5.0
+- 5.0
+face_joints_weights:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 2.0
+flat_hand_mean: false
+flip: false
+float_dtype: float32
+focal_length_x: 918.457764
+focal_length_x_2: 915.299622
+focal_length_x_3: 912.862671
+focal_length_x_4: 909.820251
+focal_length_x_5: 920.533447265625
+focal_length_x_6: 909.176331
+focal_length_y: 918.437378
+focal_length_y_2: 915.196655
+focal_length_y_3: 912.676331
+focal_length_y_4: 909.624695
+focal_length_y_5: 920.0972290039062
+focal_length_y_6: 909.235291
+frame_ids: null
+ftol: 1.0e-09
+gender: male
+gender_lbl_type: none
+gtol: 1.0e-09
+hand_joints_weights:
+- 0.0
+- 0.0
+- 0.0
+- 0.1
+- 2.0
+hand_pose_prior_weights:
+- 404.0
+- 404.0
+- 57.4
+- 4.78
+- 4.78
+ign_part_pairs:
+- 9,16
+- 9,17
+- 6,16
+- 6,17
+- 1,2
+- 12,22
+img_folder: Color
+init_joints_idxs:
+- 9
+- 12
+- 2
+- 5
+init_mode: scan
+interactive: true
+interpenetration: false
+jaw_pose_prior_weights:
+- 4.04e03,4.04e04,4.04e04
+- 4.04e03,4.04e04,4.04e04
+- 574,5740,5740
+- 47.8,478,478
+- 47.8,478,478
+jaw_prior_type: l2
+joints_to_ign:
+- 1
+- 9
+- 12
+left_hand_prior_type: l2
+load_scene: false
+loss_type: smplify
+lr: 1.0
+m2s: true
+m2s_weights:
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+mask_folder: BodyIndex
+mask_on_color: true
+max_collisions: 128
+max_persons: 3
+maxiters: 50
+mesh_folder: meshes
+model_folder: ./models
+model_type: smplx
+num_gaussians: 8
+num_pca_comps: 12
+optim_expression: true
+optim_hands: true
+optim_jaw: true
+optim_shape: true
+optim_type: lbfgsls
+output_folder: #OUTPUT_PATH
+part_segm_fn: ./models/smplx_parts_segm.pkl
+penalize_outside: true
+point2plane: false
+prior_folder: priors
+read_depth: true
+read_mask: true
+recording_dir: #PATH_TO_DATA
+render_results: true
+result_folder: results
+rho: 100.0
+rho_contact: 1
+rho_m2s: 0.5
+rho_s2m: 0.2
+right_hand_prior_type: l2
+rotation_2:
+- 0.03428619
+- -0.86942152
+- -0.18526568
+rotation_3:
+- -0.04533017
+- -1.79331277
+- -0.20892914
+rotation_4:
+- 0.07871742
+- -2.86791458
+- -0.36835477
+rotation_5:
+- -0.11264682
+- 2.48113088
+- 0.414654
+rotation_6:
+- 0.12710624
+- 1.3910801
+- 0.31429568
+s2m: true
+s2m_weights:
+- 1.0
+- 1.0
+- 100.0
+- 500.0
+- 500.0
+save_meshes: true
+sdf_penetration: false
+sdf_penetration_weights:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+shape_weights:
+- 100.0
+- 50.0
+- 10.0
+- 5.0
+- 5.0
+side_view_thsh: 25
+start: 0
+step: 1
+summary_folder: summaries
+trans_opt_stages:
+- 2
+- 3
+- 4
+translation_2:
+- 1.38735148
+- -0.05762635
+- 0.60181182
+translation_3:
+- 1.89195048
+- -0.21790867
+- 1.74276996
+translation_4:
+- 0.29837309
+- -0.39614514
+- 3.85202659
+translation_5:
+- -1.10632038
+- -0.52422399
+- 3.61727394
+translation_6:
+- -1.77213373
+- -0.2776741
+- 1.74041271
+use_cuda: true
+use_face: true
+use_face_contour: false
+use_hands: true
+use_joints_conf: true
+use_pca: true
+use_vposer: true
+visualize: false
+viz_mode: o3d
+vposer_ckpt: ./models/vposer_v1_0/
