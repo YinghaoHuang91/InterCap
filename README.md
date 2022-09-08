@@ -33,6 +33,12 @@ To run the code, one needs to get the InterCap dataset from the [***InterCap web
   Then add these lines of code _vertices = vertices[:, wo_head, :]_ right before the line of _output = SMPLXOutput(_.
   ***run.sh** inside folder ***prox_second*** can be run now. It gives the results for the whole sequences, enforcing contact between human and object.
 
+# License
+This code and model are available for non-commercial scientific research purposes as defined in the [LICENSE](https://github.com/YinghaoHuang91/InterCap/blob/master/License) file. 
+By downloading and using the code and model you agree to the terms in the [LICENSE](https://github.com/YinghaoHuang91/InterCap/blob/master/License).
+
+
+
 # Citation
 If you find this code useful for your research, please consider citing:
 ```
