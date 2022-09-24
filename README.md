@@ -2,7 +2,7 @@
 Source code for the GCPR 2022 paper: &lt;InterCap: Joint Markerless 3D Tracking of Humans and Objects in Interaction>
 
 # License
-Software Copyright License for non-commercial scientific research purposes. Please read carefully the terms and conditions and any accompanying documentation before you download and/or use the SMPL-X/SMPLify-X/PROX model, data and software, (the "Model & Software"), including 3D meshes, blend weights, blend shapes, textures, software, scripts, and animations. By downloading and/or using the Model & Software (including downloading, cloning, installing, and any other use of this github repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Model & Software. Any infringement of the terms of this agreement will automatically terminate your rights under this License
+Software Copyright License for non-commercial scientific research purposes. Please read carefully the terms and conditions and any accompanying documentation before you download and/or use the InterCap model, data and software, (the "Model & Software"), including 3D meshes, blend weights, blend shapes, textures, software, scripts, and animations. By downloading and/or using the Model & Software (including downloading, cloning, installing, and any other use of this github repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Model & Software. Any infringement of the terms of this agreement will automatically terminate your rights under this License
 
 # Dependencies 
 This code is based on [***PROX***](https://github.com/mohamedhassanmus/prox). Please check the ***Dependencies*** section for the necesssary dependencies.
@@ -44,7 +44,7 @@ If you find this code useful for your research, please consider citing:
 ```
 @inproceedings{huang2022intercap,
     title={{InterCap}: Joint Markerless 3D Tracking of Humans and Objects in Interaction},
-    author={Huang, Yinghao and Tehari, Omid and Tzionas, Dimitrios and Black, Michael J.},
+    author={Huang, Yinghao and Tehari, Omid and Black, Michael J. and Tzionas, Dimitrios},
     booktitle={German Conference on Pattern Recognition},
     year={2022},
     organization={Springer}
