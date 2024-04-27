@@ -49,5 +49,14 @@ If you find this code useful for your research, please consider citing:
     year={2022},
     organization={Springer}
 }
+
+@article{huang2024intercap,
+    title={InterCap: Joint Markerless 3D Tracking of Humans and Objects in Interaction from Multi-view RGB-D Images},
+    author={Huang, Yinghao and Taheri, Omid and Black, Michael J and Tzionas, Dimitrios},
+    journal={International Journal of Computer Vision},
+    pages={1--16},
+    year={2024},
+    publisher={Springer}
+}
 ```
 
